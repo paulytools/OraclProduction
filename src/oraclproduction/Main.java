@@ -1,25 +1,21 @@
 package oraclproduction;
 
-import oraclproduction.Product;
-
-/**
- * In this class, the actual code is executed in main.
- *
- * @author Paul Nicowski
- * @version 1.0
- * @date 10/1/18
- */
+import java.util.Date;
 
 public class Main extends Product {
 
-  @Override
-  public void setProductionNumber(int n1) {
-    super.setProductionNumber(n1);
+  Main(String name) {
+    super(name);
   }
 
   @Override
-  public void setName(String s1) {
-    super.setName(s1);
+  public void setProductionNumber(int currentProductionNumber) {
+    super.setProductionNumber(currentProductionNumber);
+  }
+
+  @Override
+  public void setName(String name) {
+    super.setName(name);
   }
 
   @Override
@@ -28,7 +24,7 @@ public class Main extends Product {
   }
 
   @Override
-  public String getManufactureDate() {
+  public Date getManufactureDate() {
     return super.getManufactureDate();
   }
 
@@ -38,15 +34,18 @@ public class Main extends Product {
   }
 
   @Override
-  public String toString(String manufacturer, int serialNumber, String manufacturedOn,
-      String name) {
+  public String toString(String manufacturer, int serialNumber, Date manufacturedOn, String name) {
     return super.toString(manufacturer, serialNumber, manufacturedOn, name);
   }
 
   public static void main(String[] args) {
 
+    String name = "TestProduct";
 
+    Product product = new Product(name);
 
+    System.out.println(product.toString(product.manufacturer, product.serialNumber,
+        product.manufacturedOn, product.name));
 
   }
 
