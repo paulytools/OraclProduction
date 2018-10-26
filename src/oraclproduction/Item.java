@@ -4,7 +4,7 @@ import java.util.Date;
 
 public interface Item {
 
-  String CONST_MANUFACTURER = "OracleProduction";
+  String manufacturer = "OraclProduction";
 
   void setProductionNumber(int n1);
 

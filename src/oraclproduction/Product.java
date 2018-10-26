@@ -5,7 +5,7 @@ import java.util.Date;
 public class Product implements Item {
 
   int serialNumber;
-  String manufacturer;
+  String manufacturer = Item.manufacturer;
   Date manufacturedOn;
   String name;
   static int currentProductionNumber = 0;
@@ -55,8 +55,8 @@ public class Product implements Item {
 
     return "Manufacturer\t: " + manufacturer + "\n"
         + "Serial Number : " + serialNumber + "\n"
-        + "Date\t\t: " + manufacturedOn + "\n"
-        + "Name\t\t: " + name;
+        + "Date\t\t\t\t\t: " + manufacturedOn + "\n"
+        + "Name\t\t\t\t\t: " + name;
 
   }
 

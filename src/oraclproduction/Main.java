@@ -44,8 +44,11 @@ public class Main extends Product {
 
     Product product = new Product(name);
 
+    product.setName("OraclProduction");
+    product.setProductionNumber(0);
+
     System.out.println(product.toString(product.manufacturer, product.serialNumber,
-        product.manufacturedOn, product.name));
+        product.getManufactureDate(), product.name));
 
   }
 
