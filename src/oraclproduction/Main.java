@@ -43,13 +43,17 @@ public class Main extends Product {
     String name = "TestProduct";
 
     Product product = new Product(name);
+    Product product2 = new Product(name);
 
-    product.setName("OraclProduction");
     product.setProductionNumber(0);
 
-    System.out.println(product.toString(product.manufacturer, product.serialNumber,
-        product.getManufactureDate(), product.name));
+    System.out.println(product.toString(product.manufacturer, product.getSerialNumber(),
+        product.getManufactureDate(), product.getName()));
 
+    System.out.println();
+
+    System.out.println(product2.toString(product2.manufacturer, product2.getSerialNumber(),
+        product2.getManufactureDate(), product2.getName()));
   }
 
 }

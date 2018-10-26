@@ -8,7 +8,7 @@ public class Product implements Item {
   String manufacturer = Item.manufacturer;
   Date manufacturedOn;
   String name;
-  static int currentProductionNumber = 0;
+  static int currentProductionNumber;
 
   Product(String name) {
 
@@ -34,7 +34,7 @@ public class Product implements Item {
 
   public String getName() {
 
-    return manufacturer;
+    return name;
 
   }
 
