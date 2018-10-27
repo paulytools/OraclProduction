@@ -1,8 +1,6 @@
-package oraclproduction;
-
 import java.util.Date;
 
-public class Product implements Item {
+public abstract class Product implements Item {
 
   int serialNumber;
   String manufacturer = Item.manufacturer;
@@ -14,7 +12,7 @@ public class Product implements Item {
 
   this.name = name;
 
-  this.serialNumber = this.currentProductionNumber++;
+  this.serialNumber = ++this.currentProductionNumber;
 
   this.manufacturedOn = new Date();
 
@@ -50,13 +48,12 @@ public class Product implements Item {
 
   }
 
-  public String toString(String manufacturer, int serialNumber,
-      Date manufacturedOn, String name) {
+  public String toString() {
 
-    return "Manufacturer\t: " + manufacturer + "\n"
+    return "Manufacturer : " + manufacturer + "\n"
         + "Serial Number : " + serialNumber + "\n"
-        + "Date\t\t\t\t\t: " + manufacturedOn + "\n"
-        + "Name\t\t\t\t\t: " + name;
+        + "Date : " + manufacturedOn + "\n"
+        + "Name : " + name;
 
   }
 
