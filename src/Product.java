@@ -10,11 +10,11 @@ public abstract class Product implements Item {
 
   Product(String name) {
 
-  this.name = name;
+    this.name = name;
 
-  this.serialNumber = ++this.currentProductionNumber;
+    this.serialNumber = ++this.currentProductionNumber;
 
-  this.manufacturedOn = new Date();
+    this.manufacturedOn = new Date();
 
   }
 
