@@ -1,3 +1,4 @@
+/*
 public class AudioPlayer extends Product implements MultimediaControl {
 
   String audioSpecification;
@@ -14,3 +15,4 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
 
 }
+*/
