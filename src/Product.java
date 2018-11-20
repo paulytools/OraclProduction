@@ -8,6 +8,10 @@ public abstract class Product implements Item {
   String name;
   static int currentProductionNumber;
 
+  Product () {
+
+  }
+
   Product(String name) {
 
     this.name = name;
