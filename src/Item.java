@@ -2,7 +2,7 @@ import java.util.Date;
 
 public interface Item {
 
-  String manufacturer = "OraclProduction";
+  String manufacturer = "OracleProduction";
 
   void setProductionNumber(int n1);
 

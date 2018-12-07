@@ -40,7 +40,7 @@ public class Screen implements ScreenSpec {
 
     return ("Resolution : " + this.resolution + "\n"
         + "Refresh rate : " + this.refreshrate + "\n"
-        + "Response time : " + this.responsetime + "\n");
+        + "Response time : " + this.responsetime);
 
   }
 

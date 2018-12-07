@@ -1,28 +1,43 @@
-import java.sql.SQLOutput;
+
 
 public class AudioPlayer extends Product implements MultimediaControl {
 
-  String audioSpecification;
-  ItemType mediaType;
+  private String audioSpecification;
+  private ItemType mediaType;
 
-  AudioPlayer(String name, String audioSpecification) {
+
+  /**
+   * AudioPlayer
+   * @param name, audioSpecification
+   *
+   * */
+  public AudioPlayer(String name, String audioSpecification) {
 
     super(name);
 
     this.audioSpecification = audioSpecification;
 
+  }
 
+  public AudioPlayer() {
+
+  }
+
+  public AudioPlayer(String name, String audioSpecification, ItemType mediaType) {
+    super(name);
+    this.audioSpecification = audioSpecification;
+    this.mediaType = mediaType;
   }
 
   public void play() {
 
-    System.out.println("Play");
+    System.out.println("Playing");
 
   }
 
   public void stop() {
 
-    System.out.println("Stopped");
+    System.out.println("Stopping");
 
   }
 
@@ -37,6 +52,25 @@ public class AudioPlayer extends Product implements MultimediaControl {
   }
 
 
+  public String toString() {
+
+    return (super.toString() + "\n" +
+        "Audio Spec : " + audioSpecification +
+        "\nType : " + mediaType.AUDIO
+        );
+
+
+  }
+
+  // For the Comparable Interface.
+  @Override
+  public int compareTo(Product compareProduct) {
+
+    int compareSerialNumber = ((Product)compareProduct).getSerialNumber();
+    // Ascending order
+    return (compareSerialNumber - this.serialNumber);
+
+  }
 
 
 }

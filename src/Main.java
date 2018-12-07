@@ -1,41 +1,50 @@
+/*
+import java.util.ArrayList;
+import java.util.Collections;
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Test Print Type");
+    AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
+    AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");
+
+    MoviePlayer m1 = new MoviePlayer("Test", new Screen("1080p",
+        144, 1),
+        MonitorType.LED);
+
+    ArrayList<Product> products = new ArrayList<>();
+    products.add(a1);
+    products.add(a2);
+    products.add(m1);
+    // Enter the line of code to call printType in Product
+    Product.printType(a1, products);
+  }
+}*/
+
+/*
 public class Main {
 
   public static void main(String args[]) {
 
-    ProcessFiles pf = new ProcessFiles();
-    try {
-      pf.WriteFile("Test");
-    } catch (Exception ex) {
-
-      System.out.println("Could not write");
-
-    }
-
-
-
-    Screen s1 = new Screen("600x400", 40, 22);
-    System.out.println(s1);
-
-    Widget w1 = new Widget("Widget 1");
-    System.out.println(w1.toString());
-    Widget w2 = new Widget("Widget 2");
-    System.out.println(w2.toString());
-
-    MoviePlayerDriver.testMoviePlayer();
-    PlayerDriver.testPlayer();
-
-    for (ItemType it : ItemType.values()) {
-      System.out.println(it + " " + it.code);
-    }
-
+    System.out.println("Test Employee Department ID");
+    EmployeeInfo employee = new EmployeeInfo();
+    System.out.println(employee.toString());
   }
 
 }
+*/
 
-class Widget extends Product {
-
-  public Widget(String name) {
-    super(name);
+public class Main {
+  public static void main(String args[]) {
+    Main myMain = new Main();
+    System.out.println(myMain.reverseString("Abcd12"));
   }
 
+  public String reverseString(String id) {
+    // Paste the code for your reverseString method here.
+
+  }
 }
+
+
+

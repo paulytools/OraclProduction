@@ -1,5 +1,18 @@
 public enum MonitorType {
 
-LCD, LED
+  LCD("LCD"),
+  LED("LED");
+
+  public final String code;
+
+  MonitorType(String code) {
+
+    this.code = code;
+
+  }
+
+  private String code() {
+    return code;
+  }
 
 }
