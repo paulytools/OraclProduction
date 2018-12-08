@@ -6,11 +6,9 @@ public class PlayerDriver extends AudioPlayer {
 
   public static void testPlayer() {
 
-
     String name = "Pyle PDV156BK";
     Screen screen = new Screen();
     MonitorType monitor = MonitorType.LED;
-
 
     AudioPlayer ap = new AudioPlayer();
     MultimediaControl mc = new MultimediaControl() {
@@ -39,7 +37,6 @@ public class PlayerDriver extends AudioPlayer {
     };
 
     MoviePlayerDriver mpd = new MoviePlayerDriver(name, screen, monitor);
-
 
     ap.next();
     ap.play();

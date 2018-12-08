@@ -8,9 +8,9 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   /**
    * AudioPlayer
-   * @param name, audioSpecification
    *
-   * */
+   * @param name, audioSpecification
+   */
   public AudioPlayer(String name, String audioSpecification) {
 
     super(name);
@@ -57,7 +57,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
     return (super.toString() + "\n" +
         "Audio Spec : " + audioSpecification +
         "\nType : " + mediaType.AUDIO
-        );
+    );
 
 
   }
@@ -66,7 +66,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
   @Override
   public int compareTo(Product compareProduct) {
 
-    int compareSerialNumber = ((Product)compareProduct).getSerialNumber();
+    int compareSerialNumber = ((Product) compareProduct).getSerialNumber();
     // Ascending order
     return (compareSerialNumber - this.serialNumber);
 

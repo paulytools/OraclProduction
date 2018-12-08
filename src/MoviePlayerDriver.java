@@ -21,8 +21,6 @@ public class MoviePlayerDriver extends MoviePlayer {
     MoviePlayer mp1 = new MoviePlayer(name1, screen1, monitor1);
     MoviePlayer mp2 = new MoviePlayer(name2, screen2, monitor2);
 
-
-
     MultimediaControl mc = new MultimediaControl() {
       @Override
       public void play() {

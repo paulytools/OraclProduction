@@ -52,7 +52,7 @@ public class Main {
 
     if (recursiveCounter == 0) {
       originalId = id;
-      chars = new char[id.length()+1];    // needs to be +1 or it is out of bounds
+      chars = new char[id.length() + 1];    // needs to be +1 or it is out of bounds
     } else if (recursiveCounter == originalId.length()) {
       chars[recursiveCounter] = id.charAt(0);   // assignment to chars because it will not
       return new String(chars);                 // do a recursive call again

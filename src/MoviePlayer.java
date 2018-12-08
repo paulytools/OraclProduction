@@ -38,9 +38,9 @@ public class MoviePlayer extends Product implements MultimediaControl {
   public String toString() {
 
     return (super.toString() +
-         "\n"
+        "\n"
         + "Screen : " + this.scr.toString() + "\n"
-    + "Monitor Type : " + this.monitor);
+        + "Monitor Type : " + this.monitor);
 
 
   }
@@ -49,7 +49,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
   @Override
   public int compareTo(Product compareProduct) {
 
-    int compareSerialNumber = ((Product)compareProduct).getSerialNumber();
+    int compareSerialNumber = ((Product) compareProduct).getSerialNumber();
     // Ascending order
     return (this.serialNumber - compareSerialNumber);
 

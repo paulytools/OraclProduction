@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 @SuppressWarnings("all")
 public class EmployeeInfo {
 
@@ -105,7 +106,7 @@ public class EmployeeInfo {
 
     if (recursiveCounter == 0) {
       originalId = id;
-      chars = new char[id.length()+1];
+      chars = new char[id.length() + 1];
     } else if (recursiveCounter == originalId.length()) {
       chars[recursiveCounter] = id.charAt(0);
       return new String(chars);

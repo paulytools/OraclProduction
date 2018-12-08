@@ -65,7 +65,6 @@ public abstract class Product implements Item, Comparable<Product> {
 
   public static void printType(Object Class, ArrayList<Product> products) {
 
-
     for (int i = 0; i <= products.size() - 1; i++) {
 
       Object className = products.get(i);
@@ -78,14 +77,13 @@ public abstract class Product implements Item, Comparable<Product> {
     }
 
 
-
   }
 
   // For the Comparable Interface.
   @Override
   public int compareTo(Product compareProduct) {
 
-    int compareSerialNumber = ((Product)compareProduct).getSerialNumber();
+    int compareSerialNumber = ((Product) compareProduct).getSerialNumber();
     // Ascending order
     return (compareSerialNumber - this.serialNumber);
 
