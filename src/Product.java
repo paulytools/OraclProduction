@@ -1,7 +1,10 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Date;
-
+/**
+ * @author Paul Nicowski
+ *
+ * */
 public abstract class Product implements Item, Comparable<Product> {
 
   int serialNumber;
@@ -52,15 +55,20 @@ public abstract class Product implements Item, Comparable<Product> {
         + "Name : " + name;
 
   }
-
+/**
+ * Override method equals for comparator to work properly.
+ * @param obj   Class as an object to use with the equals method.
+ *
+ * */
   @Override
   public boolean equals(Object obj) {
 
-    if (this.getClass().getSimpleName().equals(obj.getClass().getSimpleName())) {
-      return true;
-    } else {
-      return false;
-    }
+    /**
+     * Source: Java Programming Masterclass for Software Developers
+     *           Udemy, by Tim Buchalka, Lecture 73.
+     * */
+    return this.getClass().getSimpleName().equals(obj.getClass().getSimpleName());
+
   }
 
   public static void printType(Object Class, ArrayList<Product> products) {
@@ -80,6 +88,19 @@ public abstract class Product implements Item, Comparable<Product> {
   }
 
   // For the Comparable Interface.
+  /**
+   *
+   * Source: https://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/
+   *
+   * @param compareProduct  Instance of Product class to get
+   *                         serial number from.
+   *
+   * @return Integer
+   *
+   *
+   *
+   * */
+
   @Override
   public int compareTo(Product compareProduct) {
 

@@ -2,6 +2,10 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * @author Paul Nicowski
+ *
+ * */
 @SuppressWarnings("all")
 public class EmployeeInfo {
 
@@ -101,7 +105,11 @@ public class EmployeeInfo {
   int recursiveCounter = 0;
   String originalId = "";
   char[] chars = {0};
-
+/**
+ * @param id    String
+ *
+ *
+ * */
   public String reverseString(String id) {
 
     if (recursiveCounter == 0) {

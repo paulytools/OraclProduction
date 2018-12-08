@@ -1,3 +1,7 @@
+/**
+ * @author Paul Nicowski
+ *
+ * */
 public interface MultimediaControl {
 
   void play();

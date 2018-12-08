@@ -1,3 +1,9 @@
+/**
+ * @author Paul Nicowski
+ *
+ * Code specifiers for the Screen class.
+ *
+ * */
 public enum MonitorType {
 
   LCD("LCD"),

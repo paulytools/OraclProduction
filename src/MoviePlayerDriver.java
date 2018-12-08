@@ -1,3 +1,7 @@
+/**
+ * @author Paul Nicowski
+ *
+ * */
 public class MoviePlayerDriver extends MoviePlayer {
 
   MoviePlayerDriver(String name, Screen s, MonitorType mt) {

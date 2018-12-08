@@ -1,3 +1,7 @@
+/**
+ * @author Paul Nicowski
+ *
+ * */
 public class PlayerDriver extends AudioPlayer {
 
   PlayerDriver(String name, String audioSpecification) {

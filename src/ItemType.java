@@ -1,3 +1,9 @@
+/**
+ * @author Paul Nicowski
+ *
+ * Code specifiers for the AudioPlayer class.
+ *
+ * */
 public enum ItemType {
 
   AUDIO("AU"),

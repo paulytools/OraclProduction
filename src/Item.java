@@ -1,5 +1,8 @@
 import java.util.Date;
-
+/**
+ * @author Paul Nicowski
+ *
+ * */
 public interface Item {
 
   String manufacturer = "OracleProduction";

@@ -5,7 +5,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-
+/**
+ * @author Paul Nicowski
+ *
+ * Source: Done in class with Prof. Vanselow.
+ *
+ * */
 public class ProcessFiles {
 
   private Path p;

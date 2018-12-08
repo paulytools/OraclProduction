@@ -1,5 +1,9 @@
 import java.io.FileReader;
-
+/**
+ * @author Paul Nicowski
+ *
+ * Source: Done in class with Prof. Vanselow.
+ * */
 public class ViewFileInfo {
 
   public static void main(String[] args) {

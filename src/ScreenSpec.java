@@ -1,3 +1,7 @@
+/**
+ * @author Paul Nicowski
+ *
+ * */
 public interface ScreenSpec {
 
   public String getResolution();

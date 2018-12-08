@@ -1,3 +1,7 @@
+/**
+ * @author Paul Nicowski
+ *
+ * */
 public class Screen implements ScreenSpec {
 
   String resolution;
@@ -7,6 +11,13 @@ public class Screen implements ScreenSpec {
   Screen() {
 
   }
+
+  /**
+   * @param resolution    String, formatted such as "100x100"
+   * @param refreshrate   int
+   * @param responsetime  int
+   *
+   * */
 
   Screen(String resolution, int refreshrate,
       int responsetime) {

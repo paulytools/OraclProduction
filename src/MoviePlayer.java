@@ -1,8 +1,18 @@
+/**
+ * @author Paul Nicowski
+ *
+ * */
 public class MoviePlayer extends Product implements MultimediaControl {
 
   private MonitorType monitor;
   private Screen scr;
 
+  /**
+   * @param name          name of MoviePlayer
+   * @param screen        Screen object
+   * @param monitorType   MonitorType enum
+   *
+   * */
   public MoviePlayer(String name, Screen screen, MonitorType monitorType) {
 
     super(name);
