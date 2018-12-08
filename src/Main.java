@@ -34,15 +34,34 @@ public class Main {
 }
 */
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
+
   public static void main(String args[]) {
     Main myMain = new Main();
     System.out.println(myMain.reverseString("Abcd12"));
   }
 
-  public String reverseString(String id) {
-    // Paste the code for your reverseString method here.
+  int recursiveCounter = 0;
+  String originalId = "";
+  char[] chars = {0};
 
+  public String reverseString(String id) {
+
+    if (recursiveCounter == 0) {
+      originalId = id;
+      chars = new char[id.length()+1];
+    } else if (recursiveCounter == originalId.length()) {
+      chars[recursiveCounter] = id.charAt(0);
+      return new String(chars);
+    } else if (recursiveCounter <= originalId.length()) {
+      chars[recursiveCounter] = id.charAt(0);
+    }
+    recursiveCounter++;
+
+    return reverseString(originalId.substring(originalId.length() - recursiveCounter));
   }
 }
 

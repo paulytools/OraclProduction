@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+@SuppressWarnings("all")
 public class EmployeeInfo {
 
   private StringBuilder name;
@@ -97,13 +97,25 @@ public class EmployeeInfo {
 
   }
 
+  int recursiveCounter = 0;
+  String originalId = "";
+  char[] chars = {0};
+
   public String reverseString(String id) {
 
-    return "";
+    if (recursiveCounter == 0) {
+      originalId = id;
+      chars = new char[id.length()+1];
+    } else if (recursiveCounter == originalId.length()) {
+      chars[recursiveCounter] = id.charAt(0);
+      return new String(chars);
+    } else if (recursiveCounter <= originalId.length()) {
+      chars[recursiveCounter] = id.charAt(0);
+    }
+    recursiveCounter++;
 
-
+    return reverseString(originalId.substring(originalId.length() - recursiveCounter));
   }
-
 
   @Override
   public String toString() {
