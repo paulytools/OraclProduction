@@ -4,6 +4,8 @@ import java.util.Date;
 /**
  * @author Paul Nicowski
  *
+ *
+ *
  * */
 public abstract class Product implements Item, Comparable<Product> {
 
