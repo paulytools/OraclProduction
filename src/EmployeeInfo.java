@@ -39,7 +39,10 @@ public class EmployeeInfo {
     name = new StringBuilder(nameString);
     createEmployeeCode(name);
   }
-
+/**
+ * @param name    First and last name of the employee.
+ *
+ * */
   private void createEmployeeCode(StringBuilder name) {
     if (checkName(name)) {
 
@@ -71,6 +74,9 @@ public class EmployeeInfo {
     return nameString;
   }
 
+  /**
+   * Checks for a space in the name the user gave.
+   * */
   private boolean checkName(StringBuilder name) {
     return (name.indexOf(" ") > 0);
 
@@ -122,7 +128,7 @@ public class EmployeeInfo {
       chars[recursiveCounter] = id.charAt(0);
     }
     recursiveCounter++;
-
+    // work from end of string
     return reverseString(originalId.substring(originalId.length() - recursiveCounter));
   }
 
